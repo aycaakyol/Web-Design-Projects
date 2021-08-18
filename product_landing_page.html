@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #header {
+            display: flex;
+            flex-direction: row;
+            background-color: black;
+            margin-top: -10px;
+            margin-right: -10px;
+            margin-left: -10px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-link a:link {
+            color: rgb(243,167,186);
+        }
+
+        .nav-link a:hover {
+            color: white;
+        }
+
+        .nav-link a:visited {
+            color: rgb(243,167,186);
+        }
+
+        body {
+            background-color: rgb(243,167,186);
+            margin-right: 0px;
+            margin-left: 0px;
+        }
+
+        #header-img {
+            width: 200px;
+            height: auto;
+        }
+
+        #nav-bar {
+            display: flex;
+            flex-wrap: nowrap;
+            padding-top: 65px;
+            padding-left: 100px;
+            align-items: stretch;
+        }
+
+        .nav-link {
+            font-size: 30px;
+            padding-right: 108px;
+        }
+
+        #video {
+            border-collapse: inherit;
+        }
+
+        #form {
+            text-align: center;
+            font-size: 25px;
+        }
+
+        #email {
+            width: 400px;
+            height: 30px;
+        }
+
+        #submit {
+            width: 250px;
+            height: 40px;
+            background-color: black;
+            color: rgb(243,167,186);
+        }
+
+        #part1 {
+            display: flex;
+            font-size: 25px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+
+        #part2 {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #part3 {
+            display: flex;
+            text-align: center;
+        }
+
+        #part4 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+
+        #nav-bar li {
+            display: inline;
+        }
+
+        .box1 {
+            display: flex;
+            justify-content: space-evenly;
+            border-style: solid;
+            margin: 0 30px;
+            text-align: center;
+            flex-direction: column;
+            font-size: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media screen and (max-width: 500px) {
+            #nav-bar li {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <header id="header">
+        <img id="header-img" src="https://i1.wp.com/blackpinkupdate.com/wp-content/uploads/2020/06/BLACKPINK-BLINK-LOGO.jpg?ssl=1">
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-link"><a href="#part1" style="text-decoration: none;">Who is a milf?</a></li>
+                <li class="nav-link"><a href="#part2" style="text-decoration: none;">Here's an example</a></li>
+                <li class="nav-link"><a href="#part3" style="text-decoration: none;">How to become one?</a></li>
+                <li class="nav-link"><a href="#part4" style="text-decoration: none;">Sign up!</a></li>
+            </ul>
+        </nav>
+    </header><br><br><br><br>
+    <div id="part1">
+        <ul>
+            <li>The word MILF is the short version of Mom I'd Like to Fuck.</li><br>
+            <li>According to Urban Dictionary, it can be defined as "Any woman with children who has men that want to have sexual intercourse with her. The term is also sometimes used to describe women above a certain aged (30 or 40+) who are not mothers themselves, but are deemed to be sexually attractive, and also have men that would like to partake in sexual intercourse with them.".</li><br>
+            <li>It's counter part is a dilf. We love them both.</li>
+        </ul>
+    </div><br><br><br><br>
+    <div id="part2">
+        <iframe width="420" height="315" src="https://www.youtube.com/embed/09LjxabvPV8"></iframe>
+    </div><br><br><br><br><br>
+    <div id="part3">
+        <section class="box1">
+            <h1 class="title">Wear sunscreen</h1>
+            <p class="p">No one wants a creasy grandma. Ew. Part of the appeal is looking younger than you are.</p>
+        </section>
+        <section class="box1">
+            <h1>Stay in shape</h1>
+            <p>Everyone loves and wants a nice butt and defined beautiful abbs no matter age or gender.</p>
+        </section>
+        <section class="box1">
+            <h1>Have a child?</h1>
+            <p>Okay this part is not very desirable but the name is Mom I'd Like to Fuck so i guess it's a must? Sad tho.</p>
+        </section>
+    </div><br><br><br><br>
+    <div id="part4">
+        <form id="form" action="https://www.freecodecamp.com/email-submit"><strong>Subscribe to get more information about MILFs and meet other MILF lovers!</strong><br><br>
+            <input id="email" placeholder="Enter your email address" type="email"><br><br>
+            <input id="submit" type="submit" value="Subscribe">
+        </form>
+    </div>
+</body>
+</html>

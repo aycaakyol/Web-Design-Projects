@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        #main-doc {
+            background-color: #DBE8BC;
+            height: 98vh;
+            margin: -7px -7px -7px -7px;
+            
+        }
+
+        .main-section {
+            background-color: #DBE8BC;
+            height: 110%;
+        }
+
+        body {
+            background-color: #DBE8BC;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+            
+        }
+
+        #page {
+            font-size: 30px;
+            background-color: #89B47F;
+            text-align: center;
+            border-bottom-style: solid;
+            padding: 30px;
+        }
+
+        #nav-bar {
+            background-color: #89B47F;
+            position: fixed;
+            width: 25vw;
+            height: 100%;
+        }
+
+        .nav-link {
+            list-style-type: none;
+            border-bottom-style: solid;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            padding-left: 30px;
+            font-size: 20px;
+        }
+
+        #nav-bar ul {
+            padding: 0;
+        }
+
+        #h {
+            margin-left: -25px;
+            padding-top: 25px;
+            font-size: 30px;
+        }
+
+        #if-elif-else, #for-while, #functions, #pandas, #matplotlib {
+            margin-left: 415px;
+            text-indent: 20px;
+            font-size: 20px;
+            height: auto;
+        }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="nav-bar">
+            <header id="page">Python Documentation</header>
+            <ul>
+                <li class="nav-link"><a href="#if-elif-else">If-elif-else conditions</a></li>
+                <li class="nav-link"><a href="#for-while">For and while loops</a></li>
+                <li class="nav-link"><a href="#functions">Functions</a></li>
+                <li class="nav-link"><a href="#pandas">Pandas Library</a></li>
+                <li class="nav-link"><a href="#matplotlib">Matplotlib Library</a></li>
+            </ul>
+        </nav>
+        <section class="main-section" id="if-elif-else">
+            <header id="h">If-elif-else Conditions</header>
+            <p>If, elif and else conditions are the most basic parts of of coding, not just in Python but in all programming languages althpugh their names differ in other languages. 
+                (eg. elif is else if in Java)These conditions direct the code and tells it what to do. If option A can't be done do option B. If option B can't be done either, got to option C.</p>
+            <p>The way it works is that, you start the conditioning with if clause. You can use multiple elif conditions for any number of possibilities yo need.
+                But you can only use one if and one else for one sitiuation. You don't need to use else at all, Python lets you use elif if you want. Here's a simple example:
+            </p>
+            <code>
+                number = 1<br><br>
+                If number == 0:<br>&nbsp;
+                    print("The number is 0.")<br>
+                elif number == 1:<br>&nbsp;
+                    print("The number is 1.")<br>
+                else:<br>&nbsp;
+                    print("The number is not 1 or 0.")
+            </code><br><br>
+            <p>As you can clearly see the output will be: The number is 1.</p>
+        </section><br><br>
+        <section class="main-section" id="for-while">
+            <header id="h">For and While Loops</header>
+            <p>For and while loops re when you want to keep doing something. With for loops, you can limit the number of times the loop runs. However 
+                while loops are used with a condition. The loop works while the condition is true and if there isn't another condtions in the loop to change the first condition, 
+                the loop doesn't stop nad runs until the computer is forced to stop. Here are two simple examples:
+            </p>
+            <code>
+                for i in range(5):<br>&nbsp;
+                    print(i)
+            </code>
+            <p>In for loops if the start of the loop is not specified, it will start with zero and print as many numbers as the range. So naturally
+                because it started with 0, 5 will not be printed. Aside from start and end, for loops can have a skipper. For example; 
+            </p>
+            <code>
+                for i in range(1,2,6):<br>&nbsp;
+                    print(i)
+            </code>
+            <p>will print:<br>&nbsp;&nbsp;&nbsp;&nbsp;1<br>&nbsp;&nbsp;&nbsp;&nbsp;3<br>&nbsp;&nbsp;&nbsp;&nbsp;5<br></p>
+        </section>
+        <section class="main-section" id="functions">
+            <header id="h">Functions</header>
+            <p>Functions are one of the most important components of not only Python but all programming languages. They are a way of not 
+                repeating the same code but using it with different values. Here's a very simple function example:
+            </p>
+            <code>def function1(number):<br>&nbsp;
+                    print("The number is "+number+".")
+            </code>
+            <p>In this example, number is a variable. If the value of the variable is 5, the output will be "The number is 5.". However if it's 
+                10, the output will be "The number is 10."
+            </p>
+        </section>
+        <section class="main-section" id="pandas">
+            <header id="h">Pandas Library</header>
+            <p>Pandas is a Python library, used for manuplating and analyzing data. With Pandas library you can:</p>
+            <ul>
+                <li>Read CSV, Excel and JSON files.</li>
+                <li>Clean data.</li>
+                <li>Merge data.</li>
+                <li>Create Pandas series and dataframes.</li>
+                <li>Correlate data.</li>
+            </ul>
+            <p>Here's a simple Pandas code:</p>
+            <code>
+                import pandas as pd
+                <br>
+                df = pd.read_csv('data.csv')
+                <br>
+                print(df.to_string())
+            </code>
+        </section>
+        <section class="main-section" id="matplotlib">
+            <header id="h">Matplotlib Library</header>
+            <p>Matplotlib is a Pyhton library used for making plots which are commonly used in Data Science in order to show the data in a
+                 more understandable way to the target audience. With this library you can plot histograms, line-plots etc. Here's how you can code a simple line diagram:
+            </p>
+            <code>
+                import matplotlib.pyplot as plt<br>
+                import numpy as np<br>
+
+                xpoints = np.array([0, 6])<br>
+                ypoints = np.array([0, 250])<br>
+
+                plt.plot(xpoints, ypoints)<br>
+                plt.show()<br><br>
+            </code>
+        </section>
+    </main>
+</body>
+</html>
